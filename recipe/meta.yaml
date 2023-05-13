@@ -40,7 +40,7 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/lib/qt6/plugins/styles/adwaita6.so
+    - test -f ${PREFIX}/lib/qt6/plugins/styles/adwaita.so
     - test -f ${PREFIX}/lib/libadwaitaqt6.so
 
 about:
