@@ -1,5 +1,5 @@
-About adwaita-qt-feedstock
-==========================
+About adwaita-qt6-feedstock
+===========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/adwaita-qt-feedstock/blob/main/LICENSE.txt)
 
@@ -40,13 +40,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/adwaita-qt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>linux_ppc64le</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18830&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/adwaita-qt-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -60,53 +53,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-adwaita--qt-green.svg)](https://anaconda.org/conda-forge/adwaita-qt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/adwaita-qt.svg)](https://anaconda.org/conda-forge/adwaita-qt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/adwaita-qt.svg)](https://anaconda.org/conda-forge/adwaita-qt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/adwaita-qt.svg)](https://anaconda.org/conda-forge/adwaita-qt) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-adwaita--qt6-green.svg)](https://anaconda.org/conda-forge/adwaita-qt6) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/adwaita-qt6.svg)](https://anaconda.org/conda-forge/adwaita-qt6) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/adwaita-qt6.svg)](https://anaconda.org/conda-forge/adwaita-qt6) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/adwaita-qt6.svg)](https://anaconda.org/conda-forge/adwaita-qt6) |
 
-Installing adwaita-qt
-=====================
+Installing adwaita-qt6
+======================
 
-Installing `adwaita-qt` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `adwaita-qt6` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `adwaita-qt` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `adwaita-qt6` can be installed with `conda`:
 
 ```
-conda install adwaita-qt
-```
-
-or with `mamba`:
-
-```
-mamba install adwaita-qt
-```
-
-It is possible to list all of the versions of `adwaita-qt` available on your platform with `conda`:
-
-```
-conda search adwaita-qt --channel conda-forge
+conda install adwaita-qt6
 ```
 
 or with `mamba`:
 
 ```
-mamba search adwaita-qt --channel conda-forge
+mamba install adwaita-qt6
+```
+
+It is possible to list all of the versions of `adwaita-qt6` available on your platform with `conda`:
+
+```
+conda search adwaita-qt6 --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search adwaita-qt6 --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search adwaita-qt --channel conda-forge
+mamba repoquery search adwaita-qt6 --channel conda-forge
 
-# List packages depending on `adwaita-qt`:
-mamba repoquery whoneeds adwaita-qt --channel conda-forge
+# List packages depending on `adwaita-qt6`:
+mamba repoquery whoneeds adwaita-qt6 --channel conda-forge
 
-# List dependencies of `adwaita-qt`:
-mamba repoquery depends adwaita-qt --channel conda-forge
+# List dependencies of `adwaita-qt6`:
+mamba repoquery depends adwaita-qt6 --channel conda-forge
 ```
 
 
@@ -151,17 +144,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating adwaita-qt-feedstock
-=============================
+Updating adwaita-qt6-feedstock
+==============================
 
-If you would like to improve the adwaita-qt recipe or build a new
+If you would like to improve the adwaita-qt6 recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/adwaita-qt-feedstock are
+Note that all branches in the conda-forge/adwaita-qt6-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
