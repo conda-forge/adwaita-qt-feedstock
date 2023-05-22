@@ -12,3 +12,6 @@ os_version:
 provider:
   linux_aarch64: azure
   linux_ppc64le: azure
+bot:
+  abi_migration_branches:
+    - qt6
