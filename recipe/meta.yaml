@@ -14,7 +14,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 2
+  number: 3
   run_exports:
     # Just a guess...
     - {{ pin_subpackage('adwaita-qt', max_pin='x.x') }}
@@ -27,16 +27,12 @@ requirements:
     - cmake
     - make
     - qt-main                            # [build_platform != target_platform]
-    - {{ cdt('mesa-libgl-devel') }}      # [linux]
-    - {{ cdt('mesa-libegl') }}           # [linux]
-    - {{ cdt('mesa-libegl-devel') }}     # [linux]
-    - {{ cdt('mesa-dri-drivers') }}      # [linux]
-    - {{ cdt('libdrm-devel') }}          # [linux]
-    - {{ cdt('libglvnd-glx') }}          # [linux]
-    - {{ cdt('libglvnd-egl') }}          # [linux]
   host:
     - qt-main
     - libxcb
+    - libgl-devel                        # [linux]
+    - libegl-devel                       # [linux]
+    - libdrm                             # [linux]
 
 test:
   commands:
