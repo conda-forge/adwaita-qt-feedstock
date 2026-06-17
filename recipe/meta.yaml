@@ -14,7 +14,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 3
+  number: 4
   run_exports:
     # Just a guess...
     - {{ pin_subpackage('adwaita-qt6', max_pin='x.x') }}
