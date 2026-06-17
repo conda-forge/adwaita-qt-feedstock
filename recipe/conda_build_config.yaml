@@ -1,3 +1,6 @@
-
-c_stdlib_version:   # [linux]
-  - "2.17"          # [linux]
+# Build against both the previous (6.9) and current (6.10) qt6 minor so that
+# adwaita-qt6 is installable in environments still pinned to qt6-main 6.9
+# (conda-forge still ships qt6-main 6.9.x; e.g. pcl 1.15.0 is built against it).
+qt6_main:
+  - '6.9'
+  - '6.10'
