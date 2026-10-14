@@ -16,7 +16,7 @@ source:
     - do_not_add_qt_include_directories.patch
 
 build:
-  number: 6
+  number: 7
   skip: not linux
 
 requirements:
