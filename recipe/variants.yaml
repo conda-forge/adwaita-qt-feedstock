@@ -1,9 +1,8 @@
-# Build against the qt6-main minors still in use, so adwaita-qt6 is installable next to both.
+# Build against the oldest qt6-main minor still in use, not the newest one the global pin ('6') would pick.
 #
-# qt6-main's run-export pins consumers to the minor it was built against (`qt6-main >=<build version>,<next minor>`),
-# so a single build against the newest Qt (the global pin is just '6') is not installable in stacks held at an older
-# minor. Qt 6.11 is such a stack: vtk 9.6.2 needs qt6-main >=6.11.1, while pyside6 stops at 6.11.2 (e.g. the RoboStack
-# kilted ros2-distro-mutex 0.17 environments).
+# qt6-main 6.11+ run-exports only the major version (`qt6-main >=<build version>,<7`), so a build against 6.11 also
+# installs with 6.12, while a build against the newest Qt would exclude environments held at 6.11: vtk 9.6.2 needs
+# qt6-main >=6.11.1 and pyside6 stops at 6.11.2 (e.g. the RoboStack kilted ros2-distro-mutex 0.17 environments).
+# Raise this once 6.11 environments are gone.
 qt6_main:
   - '6.11'
-  - '6.12'
